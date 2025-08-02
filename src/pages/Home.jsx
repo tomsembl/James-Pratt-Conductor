@@ -89,9 +89,9 @@ const Home = () => {
             >
               <div className="image-container">
                 <img 
-                  src="https://images.squarespace-cdn.com/content/v1/6334fff25c187f526aa691c4/33e29cce-4c26-422e-8676-6bf71f3d7789/%23PCH_Messiah_2023_HiRes_59.jpg?format=750w" 
-                  alt="James Pratt conducting Perth Symphonic Chorus"
-                  className="conducting-photo"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQEnpWqLoGfFZA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1716263189232?e=1756944000&v=beta&t=aok7lUIcmhweVOZrEa82qej9xs60MERhmvzjLkaAZU0" 
+                  alt="James Pratt - Professional Portrait"
+                  className="profile-photo"
                 />
               </div>
             </motion.div>
@@ -259,11 +259,13 @@ const Home = () => {
         .image-container {
           border-radius: var(--border-radius);
           overflow: hidden;
-          aspect-ratio: 3/4;
+          aspect-ratio: 1;
           box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+          max-width: 400px;
+          margin: 0 auto;
         }
 
-        .conducting-photo {
+        .profile-photo {
           width: 100%;
           height: 100%;
           object-fit: cover;

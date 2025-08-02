@@ -75,24 +75,33 @@ const About = () => {
         </div>
       </section>
 
+      {/* Full-width Banner */}
+      <section className="conductor-banner">
+        <div className="banner-image">
+          <img 
+            src="https://stateopera.com.au/wp-content/uploads/2023/04/Edited_January_26-2-scaled.jpg" 
+            alt="James Pratt conducting State Opera performance"
+            className="banner-photo"
+          />
+        </div>
+      </section>
+
       {/* Biography */}
       <section className="section biography">
         <div className="container">
           <div className="grid grid-2">
-            <motion.div 
+                        <motion.div 
               className="bio-image"
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="image-container">
-                <img 
-                  src="https://staceytrust.wordpress.com/wp-content/uploads/2018/07/jamespratt.jpg" 
-                  alt="James Pratt - Professional Portrait"
-                  className="professional-portrait"
-                />
-              </div>
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/6334fff25c187f526aa691c4/33e29cce-4c26-422e-8676-6bf71f3d7789/%23PCH_Messiah_2023_HiRes_59.jpg?format=750w" 
+                alt="James Pratt conducting Perth Symphonic Chorus"
+                className="bio-photo"
+              />
             </motion.div>
             
             <motion.div 
@@ -264,6 +273,33 @@ const About = () => {
           display: flex;
           flex-direction: column;
           justify-content: center;
+        }
+
+        .conductor-banner {
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          margin: 0;
+          padding: 0;
+        }
+
+        .banner-image {
+          width: 100%;
+          height: 100%;
+        }
+
+        .banner-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+
+        .bio-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: var(--border-radius);
         }
 
         .image-container {
