@@ -1,5 +1,7 @@
 name: Deploy to GitHub Pages
 
+# GitHub Pages deployment workflow - triggered by repository settings enablement
+
 on:
   # Runs on pushes targeting the default branch
   push:
