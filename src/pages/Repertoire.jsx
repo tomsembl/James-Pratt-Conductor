@@ -1,73 +1,66 @@
 import { motion } from 'framer-motion'
-import { Music, Users, Clock, Star, Calendar, BookOpen } from 'lucide-react'
+import { Music, Users, Clock, Star, Calendar, BookOpen, Theater, GraduationCap } from 'lucide-react'
 
 const Repertoire = () => {
   const repertoireCategories = [
     {
       title: "Choral-Orchestral Masterworks",
       icon: <Users size={32} />,
-      description: "Major works for choir and orchestra",
+      description: "Major works for choir and orchestra with Perth Symphonic Chorus and collaborating orchestras",
       pieces: [
+        {
+          composer: "George Frideric Handel",
+          work: "Messiah",
+          notes: "Recent performance 2023 - Perth Symphonic Chorus",
+          difficulty: "Advanced",
+          forces: "SATB Soloists, Chorus, Orchestra"
+        },
         {
           composer: "Giuseppe Verdi",
           work: "Requiem",
-          notes: "Signature work - extensive performance experience",
+          notes: "Specialty repertoire - multiple performances",
           difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Full Orchestra"
         },
         {
           composer: "Wolfgang Amadeus Mozart",
           work: "Requiem in D minor, K. 626",
-          notes: "Classical masterwork",
+          notes: "Classical sacred masterwork",
           difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Orchestra"
         },
         {
           composer: "Ludwig van Beethoven",
           work: "Symphony No. 9 'Choral'",
-          notes: "Fourth movement with chorus",
+          notes: "Choral symphony with Perth Symphonic Chorus collaborations",
           difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Full Orchestra"
-        },
-        {
-          composer: "Johannes Brahms",
-          work: "Ein deutsches Requiem",
-          notes: "Romantic choral masterpiece",
-          difficulty: "Advanced",
-          forces: "Soprano & Baritone Soloists, Chorus, Orchestra"
         }
       ]
     },
     {
       title: "Operatic Repertoire",
       icon: <Star size={32} />,
-      description: "Opera productions and concert performances",
+      description: "Opera experience from Royal Ballet Covent Garden and theatrical productions",
       pieces: [
         {
-          composer: "Giuseppe Verdi",
-          work: "La Traviata",
-          notes: "State Opera productions",
+          composer: "Classical Opera",
+          work: "Royal Ballet Covent Garden Repertoire",
+          notes: "Assistant conductor experience at world-renowned opera house",
           difficulty: "Advanced",
           forces: "Full Opera Company, Orchestra"
         },
         {
-          composer: "Giacomo Puccini",
-          work: "Tosca",
-          notes: "Dramatic opera experience",
+          composer: "Musical Theatre",
+          work: "Phantom of the Opera",
+          notes: "Touring production conductor",
           difficulty: "Advanced",
-          forces: "Principal Cast, Chorus, Orchestra"
-        },
-        {
-          composer: "Wolfgang Amadeus Mozart",
-          work: "The Marriage of Figaro",
-          notes: "Classical opera buffa",
-          difficulty: "Advanced",
-          forces: "Ensemble Cast, Orchestra"
+          forces: "Cast, Orchestra, Touring Ensemble"
         },
         {
           composer: "Contemporary Works",
-          work: "Modern Opera Productions",
-          notes: "State Opera collaborations",
+          work: "Modern Theatrical Productions",
+          notes: "Musical theatre and opera conducting experience",
           difficulty: "Varied",
           forces: "Variable Ensembles"
         }
@@ -76,88 +69,85 @@ const Repertoire = () => {
     {
       title: "Symphonic Repertoire",
       icon: <Music size={32} />,
-      description: "Orchestral works and symphonic literature",
+      description: "Orchestral works and symphonic literature including Adelaide Symphony Orchestra debut",
       pieces: [
         {
-          composer: "Ludwig van Beethoven",
-          work: "Symphonies No. 1-9",
-          notes: "Complete symphonic cycle experience",
+          composer: "Symphony Orchestra",
+          work: "Adelaide Symphony Orchestra Debut",
+          notes: "Recent conducting debut marking career milestone",
           difficulty: "Advanced",
           forces: "Full Symphony Orchestra"
         },
         {
-          composer: "Johannes Brahms",
-          work: "Symphonies No. 1-4",
-          notes: "Romantic symphonic repertoire",
-          difficulty: "Advanced",
-          forces: "Full Symphony Orchestra"
-        },
-        {
-          composer: "Wolfgang Amadeus Mozart",
-          work: "Symphonies & Concertos",
-          notes: "Classical period specialization",
+          composer: "Classical Period",
+          work: "Mozart, Haydn, Early Beethoven",
+          notes: "Classical repertoire specialization from European training",
           difficulty: "Intermediate to Advanced",
           forces: "Chamber to Full Orchestra"
+        },
+        {
+          composer: "Romantic Period",
+          work: "Beethoven, Brahms, Romantic Symphonies",
+          notes: "Core symphonic repertoire",
+          difficulty: "Advanced",
+          forces: "Full Symphony Orchestra"
         }
       ]
     },
     {
       title: "Choral Literature",
       icon: <BookOpen size={32} />,
-      description: "Specialized choral works and arrangements",
+      description: "Perth Symphonic Chorus repertoire and choral specializations",
       pieces: [
         {
-          composer: "Johann Sebastian Bach",
-          work: "Mass in B minor",
-          notes: "Baroque choral masterwork",
+          composer: "Sacred Choral Works",
+          work: "Major Sacred Repertoire",
+          notes: "Drawing from boy chorister background and current PSC leadership",
           difficulty: "Advanced",
-          forces: "SATB Soloists, Chorus, Baroque Orchestra"
+          forces: "SATB Chorus, Orchestra"
         },
         {
-          composer: "George Frideric Handel",
-          work: "Messiah",
-          notes: "Oratorio performance experience",
-          difficulty: "Intermediate to Advanced",
-          forces: "SATB Soloists, Chorus, Orchestra"
-        },
-        {
-          composer: "Franz Schubert",
-          work: "Mass in A♭ major",
-          notes: "Romantic sacred work",
-          difficulty: "Advanced",
-          forces: "SATB Soloists, Chorus, Orchestra"
-        },
-        {
-          composer: "Contemporary Composers",
-          work: "Modern Choral Works",
-          notes: "21st-century repertoire",
+          composer: "Contemporary Choral",
+          work: "Modern Choral Compositions",
+          notes: "Innovative programming with Perth Symphonic Chorus",
           difficulty: "Varied",
-          forces: "Various Combinations"
+          forces: "Various Choral Configurations"
+        },
+        {
+          composer: "Community Repertoire",
+          work: "Educational and Outreach Programs",
+          notes: "Accessible works for community engagement",
+          difficulty: "Beginner to Intermediate",
+          forces: "Community Chorus, Various Orchestrations"
         }
       ]
     }
   ]
 
-  const specializations = [
+    const specializations = [
     {
-      area: "Verdi Requiem",
-      description: "Renowned expertise in conducting this masterwork with full orchestra and chorus",
-      experience: "Multiple performances with major orchestras and choirs"
+      title: "Choral-Orchestral Leadership",
+      description: "Perth Symphonic Chorus artistic leadership and major choral-orchestral works",
+      icon: <Users size={24} />,
+      features: ["Perth Symphonic Chorus", "Messiah performances", "Verdi Requiem specialty", "Community engagement"]
     },
     {
-      area: "Opera Conducting",
-      description: "Extensive experience with State Opera of South Australia",
-      experience: "Classical and contemporary operatic works"
+      title: "Professional Opera Experience",
+      description: "Royal Ballet Covent Garden training and theatrical production expertise",
+      icon: <Theater size={24} />,
+      features: ["Royal Ballet Covent Garden", "Phantom of the Opera", "Assistant conductor roles", "International experience"]
     },
     {
-      area: "Choral-Orchestral Works",
-      description: "Specialization in large-scale works combining choir and orchestra",
-      experience: "Regular performances with Perth Symphonic Chorus and WASO"
+      title: "Symphonic Conducting",
+      description: "Adelaide Symphony Orchestra debut and orchestral leadership",
+      icon: <Music size={24} />,
+      features: ["Adelaide Symphony debut", "Full orchestra repertoire", "Guest conducting", "Symphonic collaboration"]
     },
     {
-      area: "Educational Repertoire",
-      description: "Works suitable for developing ensembles and educational contexts",
-      experience: "Adaptation of repertoire for various skill levels"
+      title: "Musical Excellence Recognition",
+      description: "Brian Stacey Award recipient for outstanding musical achievement",
+      icon: <GraduationCap size={24} />,
+      features: ["Brian Stacey Award", "Professional recognition", "Musical leadership", "Community contribution"]
     }
   ]
 
@@ -174,8 +164,8 @@ const Repertoire = () => {
           >
             <h1>Repertoire</h1>
             <p className="hero-subtitle">
-              Extensive experience across orchestral, operatic, and choral literature, 
-              from classical masterworks to contemporary compositions.
+              From Perth Symphonic Chorus leadership to international opera experience, 
+              discover the diverse repertoire that defines James Pratt's conducting artistry.
             </p>
           </motion.div>
         </div>
@@ -205,9 +195,13 @@ const Repertoire = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <h3 className="text-gold">{spec.area}</h3>
+                <h3 className="text-gold">{spec.title}</h3>
                 <p className="spec-description">{spec.description}</p>
-                <p className="spec-experience">{spec.experience}</p>
+                <ul className="spec-features">
+                  {spec.features.map((feature, i) => (
+                    <li key={i}>{feature}</li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </div>

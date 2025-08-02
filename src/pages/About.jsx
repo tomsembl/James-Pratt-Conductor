@@ -277,7 +277,7 @@ const About = () => {
 
         .conductor-banner {
           width: 100%;
-          height: 400px;
+          height: 1000px;
           overflow: hidden;
           margin: 0;
           padding: 0;
