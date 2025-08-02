@@ -12,28 +12,24 @@ const Repertoire = () => {
           composer: "George Frideric Handel",
           work: "Messiah",
           notes: "Recent performance 2023 - Perth Symphonic Chorus",
-          difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Orchestra"
         },
         {
           composer: "Giuseppe Verdi",
           work: "Requiem",
           notes: "Specialty repertoire - multiple performances",
-          difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Full Orchestra"
         },
         {
-          composer: "Wolfgang Amadeus Mozart",
-          work: "Requiem in D minor, K. 626",
-          notes: "Classical sacred masterwork",
-          difficulty: "Advanced",
+          composer: "Gabriel Fauré",
+          work: "Requiem in D minor, Op. 48",
+          notes: "French Romantic sacred masterwork",
           forces: "SATB Soloists, Chorus, Orchestra"
         },
         {
           composer: "Ludwig van Beethoven",
           work: "Symphony No. 9 'Choral'",
           notes: "Choral symphony with Perth Symphonic Chorus collaborations",
-          difficulty: "Advanced",
           forces: "SATB Soloists, Chorus, Full Orchestra"
         }
       ]
@@ -47,21 +43,18 @@ const Repertoire = () => {
           composer: "Classical Opera",
           work: "Royal Ballet Covent Garden Repertoire",
           notes: "Assistant conductor experience at world-renowned opera house",
-          difficulty: "Advanced",
           forces: "Full Opera Company, Orchestra"
         },
         {
           composer: "Musical Theatre",
           work: "Phantom of the Opera",
           notes: "Touring production conductor",
-          difficulty: "Advanced",
           forces: "Cast, Orchestra, Touring Ensemble"
         },
         {
           composer: "Contemporary Works",
           work: "Modern Theatrical Productions",
           notes: "Musical theatre and opera conducting experience",
-          difficulty: "Varied",
           forces: "Variable Ensembles"
         }
       ]
@@ -75,21 +68,18 @@ const Repertoire = () => {
           composer: "Symphony Orchestra",
           work: "Adelaide Symphony Orchestra Debut",
           notes: "Recent conducting debut marking career milestone",
-          difficulty: "Advanced",
           forces: "Full Symphony Orchestra"
         },
         {
           composer: "Classical Period",
           work: "Mozart, Haydn, Early Beethoven",
           notes: "Classical repertoire specialization from European training",
-          difficulty: "Intermediate to Advanced",
           forces: "Chamber to Full Orchestra"
         },
         {
           composer: "Romantic Period",
           work: "Beethoven, Brahms, Romantic Symphonies",
           notes: "Core symphonic repertoire",
-          difficulty: "Advanced",
           forces: "Full Symphony Orchestra"
         }
       ]
@@ -103,21 +93,18 @@ const Repertoire = () => {
           composer: "Sacred Choral Works",
           work: "Major Sacred Repertoire",
           notes: "Drawing from boy chorister background and current PSC leadership",
-          difficulty: "Advanced",
           forces: "SATB Chorus, Orchestra"
         },
         {
           composer: "Contemporary Choral",
           work: "Modern Choral Compositions",
           notes: "Innovative programming with Perth Symphonic Chorus",
-          difficulty: "Varied",
           forces: "Various Choral Configurations"
         },
         {
           composer: "Community Repertoire",
           work: "Educational and Outreach Programs",
           notes: "Accessible works for community engagement",
-          difficulty: "Beginner to Intermediate",
           forces: "Community Chorus, Various Orchestrations"
         }
       ]
@@ -247,7 +234,6 @@ const Repertoire = () => {
                     <div key={pieceIndex} className="piece-item">
                       <div className="piece-header">
                         <h4>{piece.composer}</h4>
-                        <span className="difficulty-badge">{piece.difficulty}</span>
                       </div>
                       <h5 className="work-title">{piece.work}</h5>
                       <p className="piece-notes">{piece.notes}</p>
@@ -391,15 +377,6 @@ const Repertoire = () => {
           margin-bottom: 0;
         }
 
-        .difficulty-badge {
-          background: var(--accent-color);
-          color: var(--text-dark);
-          padding: 0.25rem 0.5rem;
-          border-radius: var(--border-radius);
-          font-size: 0.8rem;
-          font-weight: 600;
-        }
-
         .work-title {
           color: var(--secondary-color);
           margin-bottom: var(--spacing-xs);
@@ -436,10 +413,6 @@ const Repertoire = () => {
             flex-direction: column;
             gap: var(--spacing-xs);
             align-items: flex-start;
-          }
-
-          .difficulty-badge {
-            align-self: flex-start;
           }
         }
       `}</style>
