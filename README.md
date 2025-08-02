@@ -83,12 +83,16 @@ The site is built as a static single-page application and can be deployed to any
 
 ## Content Sources
 
-Information gathered from:
+**Note: Content is currently placeholder/template based on typical conductor profiles.**
+
+Information structure prepared for data from:
 - Perth Symphonic Chorus website
-- State Opera of South Australia artist profile
+- State Opera of South Australia artist profile  
 - Stacey Trust Award documentation
 - Professional LinkedIn profile
 - Performance program notes and reviews
+
+**Next Step Required:** Actual data collection from the provided links to replace placeholder content with James Pratt's specific information.
 
 ## Contact
 
@@ -96,7 +100,7 @@ For website updates or technical issues, please contact the development team.
 
 ## License
 
-© 2024 James Pratt. All rights reserved.
+© 2025 James Pratt. All rights reserved.
 - Hosting platform: GitHub Pages
 - Repository: GitHub (current repo)
 - Domain configuration: Custom domain via GitHub Pages

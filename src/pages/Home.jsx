@@ -13,20 +13,20 @@ const Home = () => {
     {
       icon: <Award size={32} />,
       title: "Award Winner",
-      description: "Stacey Trust Award 2011",
-      detail: "Recognized for excellence in musical leadership"
+      description: "Brian Stacey Memorial Trust 2011",
+      detail: "Enabling advanced studies with renowned conductors"
     },
     {
       icon: <Users size={32} />,
-      title: "Opera Conductor",
-      description: "State Opera of South Australia",
-      detail: "Experienced in operatic and symphonic repertoire"
+      title: "Opera Experience",
+      description: "Royal Ballet Covent Garden",
+      detail: "Assistant conductor at world-renowned opera house"
     },
     {
       icon: <Calendar size={32} />,
-      title: "Performance Leader",
-      description: "Major Works Specialist",
-      detail: "Expert in Verdi Requiem and classical masterworks"
+      title: "Symphony Debut",
+      description: "Adelaide Symphony Orchestra",
+      detail: "Recent conducting debut marking career milestone"
     }
   ]
 
@@ -68,15 +68,15 @@ const Home = () => {
             >
               <h2>Distinguished Musical Leadership</h2>
               <p>
-                James Pratt brings exceptional artistry and technical expertise to his role 
-                as a professional conductor. As Music Director of the Perth Symphonic Chorus, 
-                he has established himself as a leading figure in Western Australia's classical 
-                music scene.
+                James Pratt's musical journey began as a boy chorister in Adelaide, developing 
+                into an accomplished conductor with international experience. As Music Director 
+                of Perth Symphonic Chorus, he brings exceptional artistry and technical expertise 
+                to Australia's classical music scene.
               </p>
               <p>
-                With extensive experience conducting for State Opera of South Australia and 
-                expertise in major choral-orchestral works including Verdi's Requiem, James 
-                combines deep musical knowledge with inspiring leadership.
+                With assistant conductor experience at Royal Ballet Covent Garden, training in 
+                Hamburg, and his recent debut with Adelaide Symphony Orchestra, James combines 
+                European conducting traditions with deep musical scholarship and inspiring leadership.
               </p>
               <Link to="/about" className="btn">Full Biography</Link>
             </motion.div>
@@ -87,9 +87,12 @@ const Home = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="image-placeholder">
-                <Music size={64} />
-                <p>Professional Portrait</p>
+              <div className="image-container">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/6334fff25c187f526aa691c4/33e29cce-4c26-422e-8676-6bf71f3d7789/%23PCH_Messiah_2023_HiRes_59.jpg?format=750w" 
+                  alt="James Pratt conducting Perth Symphonic Chorus"
+                  className="conducting-photo"
+                />
               </div>
             </motion.div>
           </div>
@@ -177,15 +180,15 @@ const Home = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <h3>State Opera Collaborations</h3>
-              <p className="project-role">Guest Conductor</p>
+              <h3>International Experience</h3>
+              <p className="project-role">Assistant Conductor & Studies</p>
               <p>
-                Regular collaborations with State Opera of South Australia, conducting 
-                diverse operatic repertoire and working with international artists. 
-                Specializing in both traditional and contemporary works.
+                Gained invaluable experience as assistant conductor at Royal Ballet Covent Garden 
+                and through conducting studies in Hamburg, Germany. Also conducted Phantom of the 
+                Opera tour, developing expertise across operatic and theatrical repertoire.
               </p>
-              <Link to="/repertoire" className="btn btn-outline">
-                View Repertoire
+              <Link to="/about" className="btn btn-outline">
+                Read Biography
               </Link>
             </motion.div>
           </div>
@@ -253,16 +256,18 @@ const Home = () => {
           justify-content: center;
         }
 
-        .image-placeholder {
-          background: var(--border-color);
+        .image-container {
           border-radius: var(--border-radius);
+          overflow: hidden;
           aspect-ratio: 3/4;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          color: var(--text-dark);
-          opacity: 0.6;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .conducting-photo {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
         }
 
         .section-header {

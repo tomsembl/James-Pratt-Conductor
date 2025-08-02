@@ -101,7 +101,7 @@ const Navbar = () => {
           gap: 0.5rem;
           font-family: var(--font-primary);
           font-size: 1.5rem;
-          font-weight: 600;
+          font-weight: 700;
           color: var(--primary-color);
           text-decoration: none;
         }

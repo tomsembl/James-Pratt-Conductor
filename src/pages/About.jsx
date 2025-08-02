@@ -7,39 +7,51 @@ const About = () => {
       title: "Music Director",
       organization: "Perth Symphonic Chorus",
       period: "Current",
-      description: "Leading Western Australia's premier symphonic chorus in performances with the West Australian Symphony Orchestra and independent concerts. Responsible for artistic direction, repertoire selection, and choir development.",
-      highlights: ["Regular collaborations with WASO", "Major choral-orchestral works", "Community engagement programs"]
+      description: "Leading Western Australia's premier symphonic chorus, known for his innovative programming and collaborative approach with orchestras including the West Australian Symphony Orchestra.",
+      highlights: ["Regular collaborations with WASO", "Innovative choral programming", "Community engagement initiatives"]
+    },
+    {
+      title: "Assistant Conductor",
+      organization: "Royal Ballet Covent Garden",
+      period: "Previous",
+      description: "Gained invaluable operatic experience as assistant conductor at one of the world's most prestigious opera houses, working with international artists and classical repertoire.",
+      highlights: ["World-class opera experience", "International artist collaborations", "Classical and romantic repertoire"]
     },
     {
       title: "Conductor",
-      organization: "State Opera of South Australia",
-      period: "Guest Engagements",
-      description: "Regular conducting engagements with State Opera, working with international artists and diverse operatic repertoire from classical to contemporary works.",
-      highlights: ["International artist collaborations", "Diverse operatic repertoire", "Classical and contemporary works"]
+      organization: "Phantom of the Opera Tour",
+      period: "Previous",
+      description: "Developed expertise in musical theatre conducting, managing the complex demands of long-running theatrical productions and touring logistics.",
+      highlights: ["Musical theatre expertise", "Touring production management", "Theatrical conducting skills"]
     },
     {
-      title: "Specialist Conductor",
-      organization: "Major Choral Works",
-      period: "Ongoing",
-      description: "Renowned expertise in conducting major choral-orchestral masterworks, particularly Verdi's Requiem and other significant classical repertoire.",
-      highlights: ["Verdi Requiem specialist", "Major orchestral works", "Choral-symphonic repertoire"]
+      title: "Guest Conductor",
+      organization: "Adelaide Symphony Orchestra",
+      period: "Recent Debut",
+      description: "Made conducting debut with the Adelaide Symphony Orchestra, demonstrating versatility across orchestral repertoire and marking a significant career milestone.",
+      highlights: ["Orchestral conducting debut", "Professional milestone", "Symphonic repertoire expansion"]
     }
   ]
 
   const education = [
     {
-      degree: "Professional Conducting Studies",
-      institution: "Advanced Musical Training",
-      specialization: "Orchestral and Choral Conducting"
+      degree: "Music Studies",
+      institution: "University of Adelaide",
+      specialization: "Conducted advanced musical studies"
+    },
+    {
+      degree: "Advanced Conducting Studies",
+      institution: "Hamburg, Germany",
+      specialization: "European conducting traditions and technique"
     }
   ]
 
   const awards = [
     {
       year: "2011",
-      award: "Stacey Trust Award",
-      description: "Recognized for exceptional musical leadership and contribution to the classical music community.",
-      significance: "This prestigious award acknowledges outstanding achievement in musical performance and leadership."
+      award: "Brian Stacey Memorial Trust Award",
+      description: "Awarded to support advanced conducting studies with mentor Dobbs Franks and opportunities to observe Sir Simon Rattle and other distinguished conductors.",
+      significance: "This prestigious award recognizes exceptional musical talent and provides support for advanced study with leading conductors. James used the award to pursue opportunities with renowned maestros and deepen his understanding of conducting technique."
     }
   ]
 
@@ -74,9 +86,12 @@ const About = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="image-placeholder">
-                <Music size={64} />
-                <p>Professional Portrait</p>
+              <div className="image-container">
+                <img 
+                  src="https://staceytrust.wordpress.com/wp-content/uploads/2018/07/jamespratt.jpg" 
+                  alt="James Pratt - Professional Portrait"
+                  className="professional-portrait"
+                />
               </div>
             </motion.div>
             
@@ -89,23 +104,30 @@ const About = () => {
             >
               <h2>Musical Leadership Excellence</h2>
               <p>
-                James Pratt has established himself as one of Western Australia's most 
-                respected conductors, currently serving as Music Director of the Perth 
-                Symphonic Chorus. His leadership combines deep musical scholarship with 
-                inspiring artistic vision, creating memorable performances that resonate 
-                with both performers and audiences.
+                James Pratt's musical journey began as a boy treble chorister in Adelaide, 
+                where he discovered his lifelong passion for choral music. This early foundation 
+                shaped his understanding of vocal artistry and ensemble precision that would 
+                later define his conducting career.
               </p>
               <p>
-                With extensive experience in operatic conducting through his work with 
-                State Opera of South Australia, James brings versatility and expertise 
-                to a wide range of musical genres. His particular specialization in major 
-                choral-orchestral works, including Verdi's Requiem, has earned him recognition 
-                as a leading interpreter of the great classical masterworks.
+                After completing his studies at the University of Adelaide, James was awarded 
+                the prestigious Brian Stacey Award in 2011, which provided him with opportunities 
+                to further his conducting studies in Hamburg, Germany. This international experience 
+                exposed him to European conducting traditions and refined his technical skills under 
+                the mentorship of distinguished maestros.
               </p>
               <p>
-                The recipient of the prestigious Stacey Trust Award in 2011, James continues 
-                to contribute significantly to Australia's classical music landscape through 
-                his conducting, leadership, and commitment to musical excellence.
+                James gained significant opera experience as an assistant conductor at the Royal 
+                Ballet Covent Garden in London, where he worked with world-class artists and learned 
+                the intricacies of operatic conducting. He further honed his theatrical conducting 
+                skills during the Phantom of the Opera tour, developing expertise in musical theatre 
+                performance.
+              </p>
+              <p>
+                Most recently, James made his conducting debut with the Adelaide Symphony Orchestra, 
+                marking a significant milestone in his career. As Music Director of Perth Symphonic 
+                Chorus, he continues to champion choral music while expanding the ensemble's artistic 
+                horizons through innovative programming and collaborative performances.
               </p>
             </motion.div>
           </div>
@@ -244,16 +266,18 @@ const About = () => {
           justify-content: center;
         }
 
-        .image-placeholder {
-          background: var(--border-color);
+        .image-container {
           border-radius: var(--border-radius);
+          overflow: hidden;
           aspect-ratio: 3/4;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          color: var(--text-dark);
-          opacity: 0.6;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .professional-portrait {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
         }
 
         .experience-list {
