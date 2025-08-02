@@ -1048,5 +1048,5 @@ Error generating stack: `+o.message+`
             grid-template-columns: 1fr;
           }
         }
-      `})]})};function QS(){return c.jsxs("div",{className:"App",children:[c.jsx(bS,{}),c.jsx(_.main,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5},children:c.jsxs(i0,{children:[c.jsx(Nn,{path:"/",element:c.jsx($S,{})}),c.jsx(Nn,{path:"/about",element:c.jsx(WS,{})}),c.jsx(Nn,{path:"/repertoire",element:c.jsx(HS,{})}),c.jsx(Nn,{path:"/media",element:c.jsx(GS,{})}),c.jsx(Nn,{path:"/contact",element:c.jsx(KS,{})})]})}),c.jsx(US,{})]})}Ks.createRoot(document.getElementById("root")).render(c.jsx(_o.StrictMode,{children:c.jsx(d0,{children:c.jsx(QS,{})})}));
-//# sourceMappingURL=index-f8d7f132.js.map
+      `})]})};function QS(){return c.jsxs("div",{className:"App",children:[c.jsx(bS,{}),c.jsx(_.main,{initial:{opacity:0},animate:{opacity:1},transition:{duration:.5},children:c.jsxs(i0,{children:[c.jsx(Nn,{path:"/",element:c.jsx($S,{})}),c.jsx(Nn,{path:"/about",element:c.jsx(WS,{})}),c.jsx(Nn,{path:"/repertoire",element:c.jsx(HS,{})}),c.jsx(Nn,{path:"/media",element:c.jsx(GS,{})}),c.jsx(Nn,{path:"/contact",element:c.jsx(KS,{})})]})}),c.jsx(US,{})]})}Ks.createRoot(document.getElementById("root")).render(c.jsx(_o.StrictMode,{children:c.jsx(d0,{basename:"/James-Pratt-Conductor",children:c.jsx(QS,{})})}));
+//# sourceMappingURL=index-e05d02d0.js.map
