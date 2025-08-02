@@ -1,53 +1,102 @@
-# James-Pratt-Conductor
-Website for James Pratt's Career as a Conductor / Musical Director
+# James Pratt - Professional Conductor Website
 
-## Project Overview
-Brief description of the website's purpose and target audience.
+A modern, responsive website showcasing the career and achievements of James Pratt, professional conductor and Music Director of Perth Symphonic Chorus.
 
-## Design Goals
-- Professional presentation of James Pratt's conducting career
-- User-friendly navigation and accessibility
-- Mobile-responsive design
-- Performance optimization
+## Features
 
-## Target Audience
-- Orchestra and ensemble directors
-- Music venue managers
-- Musicians seeking collaboration
-- Music students and educators
-- Concert attendees and music enthusiasts
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Modern UI**: Clean, professional design with smooth animations
+- **Performance Optimized**: Fast loading times and efficient code
+- **SEO Friendly**: Proper meta tags and semantic HTML structure
+- **Accessibility**: Designed with accessibility best practices
 
-## Features & Functionality
+## Technology Stack
 
-### Core Features
-- Professional biography and career highlights
-- Performance calendar and upcoming events
-- Media gallery (photos, videos, audio recordings)
-- Repertoire showcase
-- Contact and booking information
+- **Frontend**: React 18 with Vite
+- **Routing**: React Router DOM
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Styling**: CSS Modules with custom properties
+- **Build Tool**: Vite
 
-### Advanced Features
-- Blog/News section for updates
-- Testimonials and reviews
-- Press kit downloads
-- Social media integration
-- Newsletter signup
+## Pages
 
-## Technical Requirements
+1. **Home**: Introduction and career highlights
+2. **About**: Detailed biography and professional experience
+3. **Repertoire**: Comprehensive list of conducted works
+4. **Media**: Performance recordings, photos, and press materials
+5. **Contact**: Professional contact information and booking details
 
-### Frontend
-- Framework/Library: React
-- Build Tool: Vite
-- Styling: CSS Modules or Styled Components
-- Responsive design principles
-- Cross-browser compatibility
+## Content Highlights
 
-### Backend (if needed)
-- Static site generation (no backend required initially)
-- Future: Database for events/repertoire if dynamic content needed
-- Contact form handling via Netlify Forms or similar
+### Professional Experience
+- Music Director of Perth Symphonic Chorus
+- Guest Conductor with State Opera of South Australia
+- Specialist in major choral-orchestral works including Verdi Requiem
+- Stacey Trust Award recipient (2011)
 
-### Hosting & Deployment
+### Repertoire
+- Choral-Orchestral Masterworks (Verdi Requiem, Mozart Requiem, Beethoven Symphony No. 9)
+- Operatic Productions (Classical and Contemporary works)
+- Symphonic Literature (Beethoven, Brahms, Mozart symphonies)
+- Educational and Community Programs
+
+### Media
+- Performance recordings and videos
+- Professional photography
+- Press coverage and reviews
+- Downloadable press kit
+
+## Development
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+```bash
+npm install
+```
+
+### Development Server
+```bash
+npm run dev
+```
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+## Deployment
+
+The site is built as a static single-page application and can be deployed to any static hosting service such as:
+- Netlify
+- Vercel
+- GitHub Pages
+- AWS S3 + CloudFront
+
+## Content Sources
+
+Information gathered from:
+- Perth Symphonic Chorus website
+- State Opera of South Australia artist profile
+- Stacey Trust Award documentation
+- Professional LinkedIn profile
+- Performance program notes and reviews
+
+## Contact
+
+For website updates or technical issues, please contact the development team.
+
+## License
+
+© 2024 James Pratt. All rights reserved.
 - Hosting platform: GitHub Pages
 - Repository: GitHub (current repo)
 - Domain configuration: Custom domain via GitHub Pages
@@ -173,3 +222,11 @@ Brief description of the website's purpose and target audience.
 - Accessibility guidelines (WCAG)
 - SEO best practices
 
+# gather information from the provided links
+- https://www.perthsymphonicchorus.com.au/music-director
+- https://stateopera.com.au/artist/james-pratt/
+- https://www.ticketswa.com/event/verdi-requiem
+- https://staceytrust.wordpress.com/award-recipient-2011/
+- https://www.linkedin.com/in/pratt-james/details/experience/
+- https://www.linkedin.com/in/pratt-james/?originalSubdomain=au
+- https://stateopera.com.au/five-minutes-with-james-pratt/
