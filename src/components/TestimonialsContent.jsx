@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Quote } from 'lucide-react'
+import { getAssetPath } from '../utils/helpers'
 
 const TestimonialsContent = () => {
   const testimonials = [
@@ -37,7 +38,7 @@ const TestimonialsContent = () => {
         <p>Testimonials from colleagues, musicians, and audiences</p>
         <div className="testimonials-feature-image">
           <img 
-            src="/images/James_and_Teddy_Tahu_Rhodes.jpg" 
+            src={getAssetPath("/images/James_and_Teddy_Tahu_Rhodes.jpg")} 
             alt="James Pratt with Teddy Tahu Rhodes"
             className="feature-image"
           />
