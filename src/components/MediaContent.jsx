@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { Play, Camera, Music, X } from 'lucide-react'
 import { useState } from 'react'
+import { getAssetPath } from '../utils/helpers'
 
 const MediaContent = () => {
   const [selectedImage, setSelectedImage] = useState(null)
@@ -9,91 +10,91 @@ const MediaContent = () => {
     {
       type: 'photo',
       title: 'James with Teddy Tahu Rhodes',
-      thumbnail: '/images/James_and_Teddy_Tahu_Rhodes.jpg',
+      thumbnail: getAssetPath('/images/James_and_Teddy_Tahu_Rhodes.jpg'),
       description: 'James with renowned baritone Teddy Tahu Rhodes'
     },
     {
       type: 'photo',
       title: 'Professional Portrait',
-      thumbnail: '/images/James_Pro_Portrait.jpg',
+      thumbnail: getAssetPath('/images/James_Pro_Portrait.jpg'),
       description: 'Professional portrait of James Pratt'
     },
     {
       type: 'photo',
       title: 'Conducting in Black & White',
-      thumbnail: '/images/James_Conducting_3_BW.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_3_BW.jpg'),
       description: 'Artistic black and white portrait of James conducting'
     },
     {
       type: 'photo',
       title: 'Bach St Matthew Passion - Wide Shot',
-      thumbnail: '/images/Bach_St_Matthew_Passion_Wide.jpg',
+      thumbnail: getAssetPath('/images/Bach_St_Matthew_Passion_Wide.jpg'),
       description: 'Wide view of James conducting Bach\'s St Matthew Passion'
     },
     {
       type: 'photo',
       title: 'Bach St Matthew Passion - Performance',
-      thumbnail: '/images/Bach_St_Matthew_Passion_Wide_2.jpg',
+      thumbnail: getAssetPath('/images/Bach_St_Matthew_Passion_Wide_2.jpg'),
       description: 'Another perspective of the St Matthew Passion performance'
     },
     {
       type: 'photo',
       title: 'Bach St Matthew Passion - Bowing',
-      thumbnail: '/images/James_Bowing_Bach_St_Matthew_Passion.jpg',
+      thumbnail: getAssetPath('/images/James_Bowing_Bach_St_Matthew_Passion.jpg'),
       description: 'James taking a bow after conducting Bach\'s St Matthew Passion'
     },
     {
       type: 'photo',
       title: 'Messiah 2024 - Bowing',
-      thumbnail: '/images/James_Bowing_Messiah_24.jpg',
+      thumbnail: getAssetPath('/images/James_Bowing_Messiah_24.jpg'),
       description: 'James bowing after Handel\'s Messiah performance in 2024'
     },
     {
       type: 'photo',
       title: 'Conducting Session',
-      thumbnail: '/images/James_Conducting_2.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_2.jpg'),
       description: 'James in action during a conducting session'
     },
     {
       type: 'photo',
       title: 'Bach St Matthew Passion - Conducting',
-      thumbnail: '/images/James_Conducting_Bach_St_Matthew_Passion.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_Bach_St_Matthew_Passion.jpg'),
       description: 'James conducting Bach\'s monumental St Matthew Passion'
     },
     {
       type: 'photo',
       title: 'Joyful Conducting',
-      thumbnail: '/images/James_Conducting_Joyfully.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_Joyfully.jpg'),
       description: 'James conducting with evident joy and passion'
     },
     {
       type: 'photo',
       title: 'Serious Conducting',
-      thumbnail: '/images/James_Conducting_Serious.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_Serious.jpg'),
       description: 'James in focused concentration during a performance'
     },
     {
       type: 'photo',
       title: 'Conducting with a Smile',
-      thumbnail: '/images/James_Conducting_Smile.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_Smile.jpg'),
       description: 'James conducting with warmth and enthusiasm'
     },
     {
       type: 'photo',
       title: 'Messiah 2024 - With Soloist Fiona Campbell',
-      thumbnail: '/images/James_Conducting_Soloist_Messiah_24.jpg',
+      thumbnail: getAssetPath('/images/James_Conducting_Soloist_Messiah_24.jpg'),
       description: 'James conducting alongside soloist Fiona Campbell OAM during Messiah 2024'
     },
     {
       type: 'photo',
       title: 'Trial By Jury - Soloists',
-      thumbnail: '/images/James_Trial_By_Jury_Soloists.jpg',
+      thumbnail: getAssetPath('/images/James_Trial_By_Jury_Soloists.jpg'),
       description: 'James with soloists from Gilbert & Sullivan\'s Trial By Jury 2024'
     },
     {
       type: 'photo',
       title: 'Handel\'s Messiah Wide Shot',
-      thumbnail: '/images/Handels_Messiah_Wide.webp',
+      thumbnail: getAssetPath('/images/Handels_Messiah_Wide.webp'),
       description: 'Wide shot of James conducting Handel\'s Messiah with full chorus and orchestra'
     }
   ]

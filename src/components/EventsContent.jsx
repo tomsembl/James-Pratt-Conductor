@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Calendar, MapPin, Clock, Ticket } from 'lucide-react'
+import { getAssetPath } from '../utils/helpers'
 
 const EventsContent = () => {
   const upcomingEvents = [
@@ -11,7 +12,7 @@ const EventsContent = () => {
       location: 'Perth, WA',
       description: 'An evening of classical masterpieces featuring works by Mozart, Brahms, and contemporary Australian composers.',
       ticketsAvailable: true,
-      image: '/images/James_Conducting_Joyfully.jpg'
+      image: getAssetPath('/images/James_Conducting_Joyfully.jpg')
     },
     {
       title: 'Chamber Music Ensemble',
@@ -21,7 +22,7 @@ const EventsContent = () => {
       location: 'Perth, WA',
       description: 'Intimate afternoon performance featuring baroque and romantic chamber works.',
       ticketsAvailable: true,
-      image: '/images/James_Conducting_Smile.jpg'
+      image: getAssetPath('/images/James_Conducting_Smile.jpg')
     },
     {
       title: 'Christmas Choral Spectacular',
@@ -31,7 +32,7 @@ const EventsContent = () => {
       location: 'Perth, WA',
       description: 'Traditional and contemporary Christmas carols with full chorus and orchestra.',
       ticketsAvailable: false,
-      image: '/images/Handels_Messiah_Wide.webp'
+      image: getAssetPath('/images/Handels_Messiah_Wide.webp')
     },
     {
       title: 'Masterclass: Advanced Conducting',
@@ -41,7 +42,7 @@ const EventsContent = () => {
       location: 'Mount Lawley, WA',
       description: 'Educational masterclass for aspiring conductors and music students.',
       ticketsAvailable: true,
-      image: '/images/James_Conducting_Bach_St_Matthew_Passion.jpg'
+      image: getAssetPath('/images/James_Conducting_Bach_St_Matthew_Passion.jpg')
     }
   ]
 

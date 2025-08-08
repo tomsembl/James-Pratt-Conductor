@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { getAssetPath } from '../utils/helpers'
 
 const BioContent = () => {
   return (
@@ -10,7 +11,7 @@ const BioContent = () => {
     >
       <div className="bio-header">
         <img 
-          src="/images/James_Pro_Portrait.jpg" 
+          src={getAssetPath("/images/James_Pro_Portrait.jpg")} 
           alt="James Pratt - Professional Portrait"
           className="bio-photo"
         />
@@ -61,11 +62,11 @@ const BioContent = () => {
           <h4>Recent Performances</h4>
           <div className="bio-images">
             <div className="bio-image-item">
-              <img src="/images/Bach_St_Matthew_Passion_Wide.jpg" alt="Bach St Matthew Passion Wide" />
+              <img src={getAssetPath("/images/Bach_St_Matthew_Passion_Wide.jpg")} alt="Bach St Matthew Passion Wide" />
               <p>Conducting Bach's St Matthew Passion - Wide view</p>
             </div>
             <div className="bio-image-item">
-              <img src="/images/James_Bowing_Messiah_24.jpg" alt="Messiah 2024" />
+              <img src={getAssetPath("/images/James_Bowing_Messiah_24.jpg")} alt="Messiah 2024" />
               <p>After Handel's Messiah 2024 performance</p>
             </div>
           </div>

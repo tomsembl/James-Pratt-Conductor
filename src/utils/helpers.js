@@ -1,5 +1,12 @@
 // Utility functions for the James Pratt Conductor website
 
+// Get the correct asset path for public assets (handles GitHub Pages base path)
+export const getAssetPath = (path) => {
+  // Remove leading slash if present and add base URL
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path
+  return `${import.meta.env.BASE_URL}${cleanPath}`
+}
+
 // Format date for display
 export const formatDate = (date) => {
   return new Intl.DateTimeFormat('en-AU', {

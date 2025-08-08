@@ -8,6 +8,7 @@ import TestimonialsContent from './components/TestimonialsContent'
 import MediaContent from './components/MediaContent'
 import EventsContent from './components/EventsContent'
 import ContactContent from './components/ContactContent'
+import { getAssetPath } from './utils/helpers'
 
 function App() {
   const [activeModal, setActiveModal] = useState(null)
@@ -17,7 +18,7 @@ function App() {
       id: 'bio',
       title: 'Biography',
       icon: <User size={32} />,
-      bgImage: '/images/James_Bio.jpg',
+      bgImage: getAssetPath('/images/James_Bio.jpg'),
       content: <BioContent />,
       modalTitle: 'Biography'
     },
@@ -25,7 +26,7 @@ function App() {
       id: 'testimonials',
       title: 'Testimonials',
       icon: <MessageSquare size={32} />,
-      bgImage: '/images/James_and_Teddy_Tahu_Rhodes.jpg',
+      bgImage: getAssetPath('/images/James_and_Teddy_Tahu_Rhodes.jpg'),
       content: <TestimonialsContent />,
       modalTitle: 'Testimonials'
     },
@@ -33,7 +34,7 @@ function App() {
       id: 'media',
       title: 'Media Gallery',
       icon: <Camera size={32} />,
-      bgImage: '/images/James_Conducting_Joyfully.jpg',
+      bgImage: getAssetPath('/images/James_Conducting_Joyfully.jpg'),
       content: <MediaContent />,
       modalTitle: 'Media Gallery'
     },
@@ -41,7 +42,7 @@ function App() {
       id: 'events',
       title: 'Upcoming Events',
       icon: <Calendar size={32} />,
-      bgImage: '/images/Handels_Messiah_Wide.webp',
+      bgImage: getAssetPath('/images/Handels_Messiah_Wide.webp'),
       content: <EventsContent />,
       modalTitle: 'Upcoming Events'
     },
@@ -49,7 +50,7 @@ function App() {
       id: 'contact',
       title: 'Contact',
       icon: <Mail size={32} />,
-      bgImage: '/images/James_Conducting_Serious.jpg',
+      bgImage: getAssetPath('/images/James_Conducting_Serious.jpg'),
       content: <ContactContent />,
       modalTitle: 'Contact James'
     }
