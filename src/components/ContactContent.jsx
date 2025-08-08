@@ -53,7 +53,7 @@ const ContactContent = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <Mail size={24} />
-            <div>
+            <div className="contact-card-content">
               <h4>Email</h4>
               <p>james.pratt@conductor.com</p>
             </div>
@@ -66,7 +66,7 @@ const ContactContent = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <Phone size={24} />
-            <div>
+            <div className="contact-card-content">
               <h4>Phone</h4>
               <p>+61 8 9XXX XXXX</p>
             </div>
@@ -79,7 +79,7 @@ const ContactContent = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             <MapPin size={24} />
-            <div>
+            <div className="contact-card-content">
               <h4>Location</h4>
               <p>Perth, Western Australia</p>
             </div>

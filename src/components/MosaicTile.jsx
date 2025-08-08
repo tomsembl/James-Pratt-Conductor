@@ -10,34 +10,30 @@ const MosaicTile = ({
   size = 'normal' 
 }) => {
   const tileVariants = {
-    initial: { scale: 1, y: 0, rotateY: 0 },
+    initial: { scale: 1, y: 0 },
     hover: { 
-      scale: 1.05,
-      y: -12,
-      rotateY: 2,
+      scale: 1.02,
+      y: -8,
       transition: { 
-        duration: 0.4, 
-        ease: [0.25, 0.46, 0.45, 0.94]
+        duration: 0.5, 
+        ease: [0.4, 0, 0.2, 1]
       }
     },
     tap: { 
       scale: 0.98,
-      y: 0,
+      y: -4,
       transition: { duration: 0.1 }
     }
   }
 
   const iconVariants = {
-    initial: { scale: 1, rotate: 0, y: 0 },
+    initial: { scale: 1, y: 0 },
     hover: { 
-      scale: 1.2, 
-      rotate: 5,
+      scale: 1.1, 
       y: -4,
       transition: { 
         duration: 0.3, 
-        ease: 'easeOut',
-        type: 'spring',
-        stiffness: 300
+        ease: 'easeOut'
       }
     }
   }
@@ -46,14 +42,14 @@ const MosaicTile = ({
     initial: { opacity: 1 },
     hover: { 
       opacity: 0.8,
-      transition: { duration: 0.3 }
+      transition: { duration: 0.4 }
     }
   }
 
   const contentVariants = {
     initial: { y: 0 },
     hover: { 
-      y: -6,
+      y: -4,
       transition: { duration: 0.3, ease: 'easeOut' }
     }
   }

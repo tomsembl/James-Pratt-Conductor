@@ -5,32 +5,29 @@ const Modal = ({ isOpen, onClose, children, title }) => {
   const modalVariants = {
     hidden: { 
       opacity: 0,
-      scale: 0.3,
-      borderRadius: '24px',
+      scale: 0.9,
+      y: 20,
       transition: { 
-        duration: 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94]
+        duration: 0.2,
+        ease: [0.4, 0, 0.2, 1]
       }
     },
     visible: { 
       opacity: 1,
       scale: 1,
-      borderRadius: '16px',
+      y: 0,
       transition: { 
-        duration: 0.5, 
-        ease: [0.25, 0.46, 0.45, 0.94],
-        type: 'spring',
-        stiffness: 300,
-        damping: 30
+        duration: 0.3, 
+        ease: [0.4, 0, 0.2, 1]
       }
     },
     exit: { 
       opacity: 0,
-      scale: 0.3,
-      borderRadius: '24px',
+      scale: 0.9,
+      y: 20,
       transition: { 
-        duration: 0.3,
-        ease: [0.25, 0.46, 0.45, 0.94]
+        duration: 0.2,
+        ease: [0.4, 0, 0.2, 1]
       }
     }
   }
@@ -46,7 +43,7 @@ const Modal = ({ isOpen, onClose, children, title }) => {
     },
     exit: { 
       opacity: 0,
-      transition: { duration: 0.2, delay: 0.1 }
+      transition: { duration: 0.2 }
     }
   }
 

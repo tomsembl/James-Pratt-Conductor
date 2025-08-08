@@ -59,8 +59,8 @@ const TestimonialsContent = () => {
               <p>"{testimonial.text}"</p>
             </div>
             <div className="testimonial-author">
-              <strong>{testimonial.author}</strong>
-              <span>{testimonial.role}</span>
+              <span className="name">{testimonial.author}</span>
+              <span className="title">{testimonial.role}</span>
             </div>
           </motion.div>
         ))}
