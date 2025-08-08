@@ -48,7 +48,7 @@ Successfully created a comprehensive, professional website for James Pratt, show
 #### **Color Palette**
 - **Primary**: `#1a1a1a` (Elegant black)
 - **Secondary**: `#8b4513` (Rich brown)
-- **Accent**: `#d4af37` (Professional gold)
+- **Accent**: `#d49c37` (Professional gold)
 - **Text Light**: `#f5f5f5` (Off-white)
 - **Background**: `#ffffff` (Clean white)
 
