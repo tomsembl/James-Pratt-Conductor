@@ -5,24 +5,19 @@ import { getAssetPath } from '../utils/helpers'
 const TestimonialsContent = () => {
   const testimonials = [
     {
-      text: "James brings exceptional artistry and technical precision to every performance. His leadership has elevated our chorus to new heights.",
-      author: "Perth Symphonic Chorus Member",
-      role: "Soprano Section"
+      text: "I found James to be a pleasure to work with, and possessing a devotion to the art of conducting",
+      author: "Barry Wordsworth",
+      role: "Principal Guest Conductor Royal Ballet"
     },
     {
-      text: "Working with James at Royal Ballet Covent Garden was inspiring. His understanding of operatic nuance is remarkable.",
-      author: "Royal Opera House Colleague",
-      role: "Assistant Director"
+      text: "James is very gifted technically, with a clear yet supple vocabulary of gestures. His experience as a singer gives him unique insight into voices, and the technical and interpretive challenges faced by singers in the opera house and the concert hall",
+      author: "Simon Hewett",
+      role: "Music Professional"
     },
     {
-      text: "His debut with Adelaide Symphony Orchestra was masterful. James has a rare ability to bring out the best in every musician.",
-      author: "Adelaide Symphony Orchestra",
-      role: "Principal Violinist"
-    },
-    {
-      text: "James combines technical excellence with genuine musicality. He makes complex works accessible and moving.",
-      author: "Audience Member",
-      role: "Concert Regular"
+      text: "James' conducting is supported by a keen musical intelligence and a well-developed technique. Given the right opportunities he could be a huge asset to Australia's musical future",
+      author: "Graham Abbott",
+      role: "Music Professional"
     }
   ]
 
@@ -34,8 +29,8 @@ const TestimonialsContent = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="testimonials-header">
-        <h3>What People Say</h3>
-        <p>Testimonials from colleagues, musicians, and audiences</p>
+        <h3>Professional Testimonials</h3>
+        <p>Endorsements from distinguished conductors and music professionals</p>
         <div className="testimonials-feature-image">
           <img 
             src={getAssetPath("/images/James_and_Teddy_Tahu_Rhodes.jpg")} 

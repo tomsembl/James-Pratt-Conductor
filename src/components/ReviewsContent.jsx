@@ -1,77 +1,73 @@
 import { motion } from 'framer-motion'
-import { Star, Quote, ThumbsUp } from 'lucide-react'
+import { Quote, ThumbsUp } from 'lucide-react'
 
 const ReviewsContent = () => {
   const reviews = [
     {
-      rating: 5,
-      title: "Exceptional Musical Leadership",
-      review: "James brings an extraordinary level of precision and passion to every performance. His ability to communicate complex musical ideas clearly makes him a joy to work with.",
-      reviewer: "Sarah Mitchell",
-      role: "Principal Violinist",
-      organization: "West Australian Symphony Orchestra",
-      date: "March 2024"
+      title: "Masterful Orchestra Direction",
+      review: "Conductor James Pratt coaxed the majesty of the opening Sinfonia from Perth Baroque Orchestra in broad then precise gestures",
+      reviewer: "David Cusworth",
+      role: "Music Critic",
+      organization: "The West Australian",
+      date: "2024"
     },
     {
-      rating: 5,
-      title: "Inspiring and Professional",
-      review: "Working with James on the Verdi Requiem was transformative. His deep understanding of the score and ability to guide both orchestra and chorus resulted in a truly memorable performance.",
-      reviewer: "Dr. Michael Thompson",
-      role: "Choral Director",
-      organization: "Perth Chamber Choir",
-      date: "February 2024"
+      title: "Deft Direction from the Podium",
+      review: "'All we like sheep have gone astray', nimbly executed with deft direction from the podium",
+      reviewer: "David Cusworth",
+      role: "Music Critic",
+      organization: "The West Australian",
+      date: "2024"
     },
     {
-      rating: 5,
-      title: "Outstanding Collaborative Spirit",
-      review: "James has an incredible gift for bringing out the best in every musician. His rehearsals are efficient, focused, and always conducted with respect and professionalism.",
-      reviewer: "Elena Rodriguez",
-      role: "Soprano Soloist",
-      organization: "Opera Australia",
-      date: "January 2024"
+      title: "Triumphant Hallelujah Chorus",
+      review: "All then stood for the Hallelujah chorus; trumpets pitching in with timpani and full ensemble, rallying to an ovation for the ages",
+      reviewer: "David Cusworth",
+      role: "Music Critic",
+      organization: "The West Australian",
+      date: "2024"
     },
     {
-      rating: 5,
-      title: "Masterful Interpretation",
-      review: "His interpretation of Bach's St. Matthew Passion was nothing short of brilliant. James understands the spiritual depth of the music and communicates it beautifully to both performers and audience.",
-      reviewer: "Professor James Williams",
-      role: "Head of Music",
-      organization: "University of Western Australia",
-      date: "December 2023"
+      title: "Sharp Pace and Musical Excellence",
+      review: "Down in the pit, the players of the Adelaide Symphony Orchestra keep up a sharp pace under conductor James Pratt. The opening overture is fulsome and serves as an enticing appetiser to the action.",
+      reviewer: "Arts Hub",
+      role: "Music Review",
+      organization: "Arts Hub",
+      date: "2023"
     },
     {
-      rating: 5,
-      title: "Dynamic and Engaging",
-      review: "James has the rare ability to make every rehearsal engaging and productive. His clear conducting technique and musical insight create an environment where excellence naturally emerges.",
-      reviewer: "Robert Chen",
-      role: "Concert Master",
-      organization: "Perth Symphonic Chorus",
-      date: "November 2023"
+      title: "Well-Judged Musical Direction",
+      review: "Down in the pit, the ASO are a great delight… conductor James Pratt gives well-judged length and pliability to line, giving Sullivan's score ample room to breathe while moving proceedings along at speed.",
+      reviewer: "Indaily",
+      role: "Music Review",
+      organization: "Indaily",
+      date: "2023"
     },
     {
-      rating: 5,
-      title: "Exceptional Artistic Vision",
-      review: "Collaborating with James on our recent production was exceptional. His artistic vision, combined with practical musicianship, made for a truly outstanding performance.",
-      reviewer: "Amanda Foster",
-      role: "Artistic Director",
-      organization: "Perth Festival",
-      date: "October 2023"
+      title: "Superb Orchestra Management",
+      review: "With James Pratt conducting the performance, the Adelaide Symphony Orchestra sounds superb. Pratt's tempi are spot-on, and his management of dynamic levels always works to support the performers.",
+      reviewer: "Glam Adelaide",
+      role: "Music Review",
+      organization: "Glam Adelaide",
+      date: "2023"
+    },
+    {
+      title: "Energy and Musical Gusto",
+      review: "Musical Director James Pratt faithfully delivers Sullivan's score, but with more energy and gusto than I have heard in a long while.",
+      reviewer: "Stage Whispers",
+      role: "Music Review",
+      organization: "Stage Whispers",
+      date: "2023"
+    },
+    {
+      title: "Skilful and Perceptive Conducting",
+      review: "James Pratt is a skilful conductor of the Adelaide Symphony Orchestra, accompanying the singers with perception.",
+      reviewer: "The Advertiser",
+      role: "Music Review",
+      organization: "The Advertiser",
+      date: "2023"
     }
   ]
-
-  const renderStars = (rating) => {
-    return Array.from({ length: 5 }, (_, index) => (
-      <Star
-        key={index}
-        size={16}
-        className={`star ${index < rating ? 'filled' : 'empty'}`}
-        fill={index < rating ? '#d4af37' : 'none'}
-        color="#d4af37"
-      />
-    ))
-  }
-
-  const avgRating = (reviews.reduce((sum, review) => sum + review.rating, 0) / reviews.length).toFixed(1)
 
   return (
     <motion.div 
@@ -81,23 +77,8 @@ const ReviewsContent = () => {
       transition={{ duration: 0.5 }}
     >
       <div className="reviews-header">
-        <h3>Professional Reviews</h3>
-        <p>Feedback from colleagues, soloists, and music professionals</p>
-        
-        <div className="reviews-summary">
-          <div className="rating-overview">
-            <div className="average-rating">
-              <span className="rating-number">{avgRating}</span>
-              <div className="rating-stars">
-                {renderStars(Math.round(Number(avgRating)))}
-              </div>
-            </div>
-            <div className="rating-details">
-              <p>{reviews.length} Professional Reviews</p>
-              <p>Average Rating: {avgRating} out of 5</p>
-            </div>
-          </div>
-        </div>
+        <h3>Press Reviews</h3>
+        <p>Critical acclaim from leading music publications and media outlets</p>
       </div>
       
       <div className="reviews-grid">
@@ -111,9 +92,6 @@ const ReviewsContent = () => {
             whileHover={{ y: -4 }}
           >
             <div className="review-header">
-              <div className="review-rating">
-                {renderStars(review.rating)}
-              </div>
               <div className="review-date">{review.date}</div>
             </div>
             
@@ -140,7 +118,7 @@ const ReviewsContent = () => {
       </div>
       
       <div className="reviews-footer">
-        <p>All reviews are from verified professional collaborations and performances.</p>
+        <p>All reviews are from published music critics and established media outlets.</p>
       </div>
     </motion.div>
   )
