@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { User, MessageSquare, Camera, Calendar, Mail } from 'lucide-react'
+import { User, MessageSquare, Camera, Calendar, Mail, Star } from 'lucide-react'
 import MosaicTile from './components/MosaicTile'
 import Modal from './components/Modal'
 import BioContent from './components/BioContent'
@@ -8,6 +8,7 @@ import TestimonialsContent from './components/TestimonialsContent'
 import MediaContent from './components/MediaContent'
 import EventsContent from './components/EventsContent'
 import ContactContent from './components/ContactContent'
+import ReviewsContent from './components/ReviewsContent'
 import { getAssetPath } from './utils/helpers'
 
 function App() {
@@ -45,6 +46,14 @@ function App() {
       bgImage: getAssetPath('/images/Handels_Messiah_Wide.webp'),
       content: <EventsContent />,
       modalTitle: 'Upcoming Events'
+    },
+    {
+      id: 'reviews',
+      title: 'Reviews',
+      icon: <Star size={32} />,
+      bgImage: getAssetPath('/images/James_Conducting_Smile.jpg'),
+      content: <ReviewsContent />,
+      modalTitle: 'Professional Reviews'
     },
     {
       id: 'contact',
