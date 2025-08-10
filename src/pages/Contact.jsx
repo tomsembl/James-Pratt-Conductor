@@ -31,7 +31,7 @@ const Contact = () => {
 
   const contactInfo = {
     location: "Perth, Western Australia",
-    email: "info@jamespratt.com",
+    email: "info@jamespratt.com.au",
     phone: "+61 (0) 8 XXXX XXXX",
     availability: "Available for bookings Australia-wide and internationally",
     response: "Response within 24 hours"
@@ -138,9 +138,7 @@ const Contact = () => {
                   <Linkedin size={24} />
                   <div>
                     <h4>LinkedIn</h4>
-                    <a href="https://www.linkedin.com/in/pratt-james/" target="_blank" rel="noopener noreferrer">
-                      Professional Profile
-                    </a>
+                    <a href="https://www.linkedin.com/in/james-pratt-conductor" target="_blank" rel="noopener noreferrer">Profile</a>
                   </div>
                 </div>
 
@@ -155,123 +153,113 @@ const Contact = () => {
             </motion.div>
 
             <motion.div 
-              className="contact-form-container"
+              className="contact-form-wrapper"
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="contact-form card">
-                <h3>Send a Message</h3>
-                <form onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <label htmlFor="name">Full Name *</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
+              <form className="contact-form" onSubmit={handleSubmit}>
+                <div className="form-group">
+                  <label htmlFor="name">Full Name</label>
+                  <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required />
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="email">Email Address *</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      required
-                    />
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email Address *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="organization">Organization</label>
-                    <input
-                      type="text"
-                      id="organization"
-                      name="organization"
-                      value={formData.organization}
-                      onChange={handleInputChange}
-                      placeholder="Orchestra, Opera Company, School, etc."
-                    />
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="organization">Organization</label>
+                  <input
+                    type="text"
+                    id="organization"
+                    name="organization"
+                    value={formData.organization}
+                    onChange={handleInputChange}
+                    placeholder="Orchestra, Opera Company, School, etc."
+                  />
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="phone">Phone Number</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                    />
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                  />
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="inquiryType">Type of Inquiry *</label>
-                    <select
-                      id="inquiryType"
-                      name="inquiryType"
-                      value={formData.inquiryType}
-                      onChange={handleInputChange}
-                      required
-                    >
-                      <option value="">Select inquiry type</option>
-                      {inquiryTypes.map((type, index) => (
-                        <option key={index} value={type}>{type}</option>
-                      ))}
-                    </select>
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="inquiryType">Type of Inquiry *</label>
+                  <select
+                    id="inquiryType"
+                    name="inquiryType"
+                    value={formData.inquiryType}
+                    onChange={handleInputChange}
+                    required
+                  >
+                    <option value="">Select inquiry type</option>
+                    {inquiryTypes.map((type, index) => (
+                      <option key={index} value={type}>{type}</option>
+                    ))}
+                  </select>
+                </div>
 
-                  <div className="form-group">
-                    <label htmlFor="message">Message *</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={6}
-                      placeholder="Please provide details about your project, dates, repertoire, and any specific requirements..."
-                      required
-                    ></textarea>
-                  </div>
+                <div className="form-group">
+                  <label htmlFor="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows={6}
+                    placeholder="Please provide details about your project, dates, repertoire, and any specific requirements..."
+                    required
+                  ></textarea>
+                </div>
 
-                  <div className="form-group">
-                    <label>Preferred Contact Method</label>
-                    <div className="radio-group">
-                      <label className="radio-option">
-                        <input
-                          type="radio"
-                          name="preferredContact"
-                          value="email"
-                          checked={formData.preferredContact === 'email'}
-                          onChange={handleInputChange}
-                        />
-                        Email
-                      </label>
-                      <label className="radio-option">
-                        <input
-                          type="radio"
-                          name="preferredContact"
-                          value="phone"
-                          checked={formData.preferredContact === 'phone'}
-                          onChange={handleInputChange}
-                        />
-                        Phone
-                      </label>
-                    </div>
+                <div className="form-group">
+                  <label>Preferred Contact Method</label>
+                  <div className="radio-group">
+                    <label className="radio-option">
+                      <input
+                        type="radio"
+                        name="preferredContact"
+                        value="email"
+                        checked={formData.preferredContact === 'email'}
+                        onChange={handleInputChange}
+                      />
+                      Email
+                    </label>
+                    <label className="radio-option">
+                      <input
+                        type="radio"
+                        name="preferredContact"
+                        value="phone"
+                        checked={formData.preferredContact === 'phone'}
+                        onChange={handleInputChange}
+                      />
+                      Phone
+                    </label>
                   </div>
+                </div>
 
-                  <button type="submit" className="btn submit-btn">
-                    <Send size={20} />
-                    Send Message
-                  </button>
-                </form>
-              </div>
+                <button type="submit" className="btn-submit">
+                  <Send size={18} />
+                  Send Message
+                </button>
+              </form>
             </motion.div>
           </div>
         </div>

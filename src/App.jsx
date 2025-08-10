@@ -76,22 +76,37 @@ function App() {
   const currentTile = tiles.find(tile => tile.id === activeModal)
 
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundColor: '#ffffff' }}>
+      {/* Header */}
+      <header className="site-header" style={{
+        padding: '24px 16px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderBottom: '1px solid #f1f3f4',
+        backgroundColor: '#f8f9fa',
+        position: 'sticky',
+        top: 0,
+        zIndex: 100
+      }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+          <img
+            src={getAssetPath('/images/James_Pro_Portrait.jpg')}
+            alt="James Pratt"
+            style={{ width: 56, height: 56, borderRadius: '50%', objectFit: 'cover', border: '2px solid #e9ecef' }}
+          />
+          <div style={{ display: 'flex', flexDirection: 'column' }}>
+            <strong style={{ fontSize: 20, letterSpacing: '-0.02em' }}>James Pratt</strong>
+          </div>
+        </div>
+      </header>
+
       <motion.main
         className="mosaic-container"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <motion.div 
-          className="mosaic-header"
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <h1>James Pratt</h1>
-          <p>Professional Conductor & Musical Director</p>
-        </motion.div>
 
         <motion.div 
           className="mosaic-grid"
@@ -117,6 +132,17 @@ function App() {
           ))}
         </motion.div>
       </motion.main>
+
+      {/* Footer */}
+      <footer className="site-footer" style={{
+        padding: '24px 16px',
+        textAlign: 'center',
+        borderTop: '1px solid #f1f3f4'
+      }}>
+        <small style={{ color: '#6c757d' }}>
+          © 2025 • <a href="mailto:info@jamespratt.com.au">info@jamespratt.com.au</a>
+        </small>
+      </footer>
 
       <Modal
         isOpen={!!activeModal}

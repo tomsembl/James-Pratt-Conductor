@@ -55,7 +55,7 @@ const ContactContent = () => {
             <Mail size={24} />
             <div className="contact-card-content">
               <h4>Email</h4>
-              <p>james.pratt@conductor.com</p>
+              <p>info@jamespratt.com.au</p>
             </div>
           </motion.div>
           
