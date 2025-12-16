@@ -760,6 +760,11 @@ img {
   backdrop-filter: blur(0px);
 }
 
+/* Home page override: make mosaic tiles square instead of portrait */
+.home .mosaic-tile {
+  aspect-ratio: 1/1;
+}
+
 .mosaic-tile::before {
   content: '';
   position: absolute;
