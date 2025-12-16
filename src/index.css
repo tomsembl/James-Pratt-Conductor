@@ -765,6 +765,11 @@ img {
   aspect-ratio: 1/1;
 }
 
+/* Also ensure the main mosaic container (used on the app home) shows square tiles */
+.mosaic-container .mosaic-tile {
+  aspect-ratio: 1/1;
+}
+
 .mosaic-tile::before {
   content: '';
   position: absolute;
